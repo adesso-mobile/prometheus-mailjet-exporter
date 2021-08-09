@@ -48,7 +48,7 @@ def get_config(config_path):
         return yaml.load(fp)
 
 
-if __name__ == "__main__":
+def run():
     try:
         interval = os.getenv("MAILJET_EXPORTER_INTERVAL_SEC", 60)
 
@@ -100,3 +100,7 @@ if __name__ == "__main__":
 
     except Exception as e:
         print(f"Unexpected error: {e}")
+
+
+if __name__ == "__main__":
+    run()
