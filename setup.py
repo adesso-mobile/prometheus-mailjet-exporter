@@ -25,7 +25,7 @@ setuptools.setup(
     python_requires=">=3.6",
     entry_points={  
         "console_scripts": [
-            "prometheus-mailjet-exporter=prometheus-mailjet-exporter:run",
+            "prometheus-mailjet-exporter=prometheus_mailjet_exporter:run",
         ],
     },
 )
